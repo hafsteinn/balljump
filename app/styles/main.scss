@@ -1,0 +1,256 @@
+@import "compass/css3";
+@import "animations";
+@import "player";
+@import "platforms";
+
+.game {
+
+  /*
+  border-style:solid;
+  border-color:purple;
+  */
+
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 600px;
+  margin-left: -200px;
+  margin-top: -300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.world {
+  /*
+  border-style: solid;
+  border-color:green;
+  */
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  
+}
+
+.background {
+  /*background: url('http://www.spriteland.com/sprites/mountain-background.jpg');*/
+  background: url('/images/blue_sky.jpg');
+  background-size: 400px;
+  /*
+  background-color: #101ca7;
+  border-style:solid;
+  border-color:red;
+  */
+  height: 50000px;
+  width: 400px; 
+
+  margin-top: -49400px;
+
+}
+
+.score{ /*Image borrowed from here: http://www.clker.com/cliparts/7/4/3/2/1225770064405054895iammisc_Wood_Plank.svg.hi.png*/ 
+
+  background-image: url('/images/wood_plank_2.png'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width:120px; 
+  height:50px;
+  font-size: 35px; 
+  font-family:"Times New Roman", Times, serif;
+  font-weight: bolder;
+  text-align:center;
+  vertical-align:middle;
+
+  position:absolute;
+
+  margin-top: 20px; 
+  margin-left:280px; 
+}
+
+.gameOver{
+
+/*Image borrowed from here: http://preview.turbosquid.com/Preview/2010/12/08__17_52_00/planken.jpge3fd952d-a788-4fbf-8518-8f95d6e11080Larger.jpg*/ 
+  background-image: url('/images/menu_background.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 400px; 
+  height:600px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position:absolute;
+
+  z-index: 2;
+
+}
+
+.startScreen{
+
+/*Image borrowed from here: http://preview.turbosquid.com/Preview/2010/12/08__17_52_00/planken.jpge3fd952d-a788-4fbf-8518-8f95d6e11080Larger.jpg*/ 
+  background-image: url('/images/menu_background.jpg'); 
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 400px; 
+  height:600px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: absolute;
+
+  font-size: 30px; 
+font-family:"Times New Roman", Times, serif; 
+font-weight: bolder; 
+text-align:center;
+vertical-align:middle;
+
+z-index: 1;
+
+}
+
+.inputField{
+  width:100px;
+  height:50px;
+
+  margin:0 20px;
+
+}
+
+#playerNickName {
+    position: absolute;
+    background-color:transparent;
+    
+
+
+    margin:20px 0;
+
+
+    background:none;
+    border:none;
+    text-shadow:none;
+    box-shadow: none;
+    border-color: transparent;
+    border-bottom-style:dotted;
+    border-bottom-color:black;
+    font-size:25px;
+
+}
+
+*:focus {
+    outline: 0;
+}
+
+
+
+.startButton{
+   background-image: url('/images/playButton.png');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+
+ width: 200px;
+ height: 80px; 
+ 
+ margin:170px auto;
+}
+
+.wellDone{
+
+/*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+ background-image: url('/images/wellDone.png');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+
+ width: 300px;
+ height: 50px; 
+ position: absolute; 
+ margin:100px 50px;
+
+ z-index: 3;
+}
+
+.youScored{
+    background-image: url('/images/youScored.png');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+
+ width: 200px;
+ height: 50px; 
+ position: absolute; 
+ margin-left:100px; 
+ margin-top: 300px;
+
+ z-index: 3;
+
+}
+
+.playerName{
+
+ width: 200px;
+ height: 50px; 
+ position: absolute; 
+ margin-left:100px; 
+ margin-top: 200px;
+
+ font-size: 40px; 
+font-family:"Times New Roman", Times, serif; 
+font-weight: bolder; 
+text-align:center; 
+vertical-align:middle;
+
+ z-index: 3;
+}
+
+.gameOverButton{
+
+/*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+ background-image: url('/images/playAgainButton.png');
+ background-size: 100% 100%;
+ background-repeat: no-repeat;
+
+ width: 200px;
+ height: 50px; 
+ position: absolute; 
+ margin-left:100px; 
+ margin-top: 450px;
+
+ z-index: 3;
+}
+
+.displayScore{
+
+/*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+width: 100px; 
+height: 50px; 
+position: absolute; 
+margin:360px 150px;
+
+font-size: 50px; 
+font-family:"Times New Roman", Times, serif; 
+font-weight: bolder; 
+text-align:center; 
+vertical-align:middle;
+
+}
+
+.nickName{
+    /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+ background-image: url('/images/nickNameFont.png');
+ background-repeat: no-repeat;
+ background-size: 100%;
+
+  width:300px;
+  height:50px;
+
+  margin:0 auto;
+
+}
+
+.title{
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+ background-image: url('/images/title.png');
+ background-size: 350px;
+ background-repeat: no-repeat;
+ margin: 50px auto;
+
+
+ width:350px;
+ height:100px;
+
+}
+

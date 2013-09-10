@@ -1,0 +1,51 @@
+/* line 1, ../../app/styles/platforms.scss */
+
+.ground {
+  position: absolute;
+  height: 100px;
+  width: 450px;
+  /*Image borrowed from here: http://www.auntie-mom.com/grass__no_background_.png*/
+  background-image: url("/images/grass_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  margin-left: -15px;
+  margin-top: -80px;
+}
+
+/* line 12, ../../app/styles/platforms.scss */
+
+.platform {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  /*Image borrowed from here: http://www.auntie-mom.com/grass__no_background_.png*/
+  background-image: url("/images/grass_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 26, ../../app/styles/platforms.scss */
+
+.enemy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  background-image: url("/images/football_shoe.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 35, ../../app/styles/platforms.scss */
+
+.movingPlatform {
+  background-image: url("/images/speed_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  /*background: url('/images/speed_platform.png') 100% 100% / contain no-repeat; */
+}

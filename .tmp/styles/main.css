@@ -1,0 +1,336 @@
+/* line 2, ../../app/styles/player.scss */
+
+.player {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: -18px;
+  margin-left: -25px;
+  /* @include transform-origin(0, 0); */
+}
+
+/* line 13, ../../app/styles/player.scss */
+
+.player div {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 14, ../../app/styles/player.scss */
+
+.player div div {
+  background: #A4CA39;
+  position: relative;
+}
+
+/* line 19, ../../app/styles/player.scss */
+
+.player .ball {
+  /*@include transition(all 0.1s linear); */
+  /*@include transform-origin(50% 50%);*/
+  width: 50px;
+  height: 50px;
+}
+
+/* line 1, ../../app/styles/platforms.scss */
+
+.ground {
+  position: absolute;
+  height: 100px;
+  width: 450px;
+  /*Image borrowed from here: http://www.auntie-mom.com/grass__no_background_.png*/
+  background-image: url("/images/grass_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  margin-left: -15px;
+  margin-top: -80px;
+}
+
+/* line 12, ../../app/styles/platforms.scss */
+
+.platform {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  /*Image borrowed from here: http://www.auntie-mom.com/grass__no_background_.png*/
+  background-image: url("/images/grass_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 26, ../../app/styles/platforms.scss */
+
+.enemy {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 50px;
+  background-image: url("/images/football_shoe.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+
+/* line 35, ../../app/styles/platforms.scss */
+
+.movingPlatform {
+  background-image: url("/images/speed_platform.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  /*background: url('/images/speed_platform.png') 100% 100% / contain no-repeat; */
+}
+
+/* line 6, ../../app/styles/main.scss */
+
+.game {
+  /*
+  border-style:solid;
+  border-color:purple;
+  */
+  left: 50%;
+  top: 50%;
+  width: 400px;
+  height: 600px;
+  margin-left: -200px;
+  margin-top: -300px;
+  overflow: hidden;
+  position: absolute;
+}
+
+/* line 23, ../../app/styles/main.scss */
+
+.world {
+  /*
+  border-style: solid;
+  border-color:green;
+  */
+  position: absolute;
+  width: 400px;
+  height: 600px;
+}
+
+/* line 34, ../../app/styles/main.scss */
+
+.background {
+  /*background: url('http://www.spriteland.com/sprites/mountain-background.jpg');*/
+  background: url("/images/blue_sky.jpg");
+  -webkit-background-size: 400px;
+  background-size: 400px;
+  /*
+  background-color: #101ca7;
+  border-style:solid;
+  border-color:red;
+  */
+  height: 50000px;
+  width: 400px;
+  margin-top: -49400px;
+}
+
+/* line 50, ../../app/styles/main.scss */
+
+.score {
+  /*Image borrowed from here: http://www.clker.com/cliparts/7/4/3/2/1225770064405054895iammisc_Wood_Plank.svg.hi.png*/
+  background-image: url("/images/wood_plank_2.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 50px;
+  font-size: 35px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 280px;
+}
+
+/* line 69, ../../app/styles/main.scss */
+
+.gameOver {
+  /*Image borrowed from here: http://preview.turbosquid.com/Preview/2010/12/08__17_52_00/planken.jpge3fd952d-a788-4fbf-8518-8f95d6e11080Larger.jpg*/
+  background-image: url("/images/menu_background.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 600px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 2;
+}
+
+/* line 85, ../../app/styles/main.scss */
+
+.startScreen {
+  /*Image borrowed from here: http://preview.turbosquid.com/Preview/2010/12/08__17_52_00/planken.jpge3fd952d-a788-4fbf-8518-8f95d6e11080Larger.jpg*/
+  background-image: url("/images/menu_background.jpg");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 400px;
+  height: 600px;
+  margin-left: 0px;
+  margin-top: 0px;
+  position: absolute;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+/* line 107, ../../app/styles/main.scss */
+
+.inputField {
+  width: 100px;
+  height: 50px;
+  margin: 0 20px;
+}
+
+/* line 115, ../../app/styles/main.scss */
+
+#playerNickName {
+  position: absolute;
+  background-color: transparent;
+  margin: 20px 0;
+  background: none;
+  border: none;
+  text-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: transparent;
+  border-bottom-style: dotted;
+  border-bottom-color: black;
+  font-size: 25px;
+}
+
+/* line 135, ../../app/styles/main.scss */
+
+*:focus {
+  outline: 0;
+}
+
+/* line 141, ../../app/styles/main.scss */
+
+.startButton {
+  background-image: url("/images/playButton.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 80px;
+  margin: 170px auto;
+}
+
+/* line 152, ../../app/styles/main.scss */
+
+.wellDone {
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+  background-image: url("/images/wellDone.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 50px;
+  position: absolute;
+  margin: 100px 50px;
+  z-index: 3;
+}
+
+/* line 167, ../../app/styles/main.scss */
+
+.youScored {
+  background-image: url("/images/youScored.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 300px;
+  z-index: 3;
+}
+
+/* line 182, ../../app/styles/main.scss */
+
+.playerName {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 200px;
+  font-size: 40px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+  z-index: 3;
+}
+
+/* line 199, ../../app/styles/main.scss */
+
+.gameOverButton {
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+  background-image: url("/images/playAgainButton.png");
+  -webkit-background-size: 100% 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  margin-left: 100px;
+  margin-top: 450px;
+  z-index: 3;
+}
+
+/* line 215, ../../app/styles/main.scss */
+
+.displayScore {
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+  width: 100px;
+  height: 50px;
+  position: absolute;
+  margin: 360px 150px;
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bolder;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 231, ../../app/styles/main.scss */
+
+.nickName {
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+  background-image: url("/images/nickNameFont.png");
+  background-repeat: no-repeat;
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  width: 300px;
+  height: 50px;
+  margin: 0 auto;
+}
+
+/* line 244, ../../app/styles/main.scss */
+
+.title {
+  /*Image borrowed from here: http://3.bp.blogspot.com/-Lxj6rVMKGRQ/URgXoZcwcEI/AAAAAAAANb8/4oJ64bnL_AA/s1600/play-again.png*/
+  background-image: url("/images/title.png");
+  -webkit-background-size: 350px;
+  background-size: 350px;
+  background-repeat: no-repeat;
+  margin: 50px auto;
+  width: 350px;
+  height: 100px;
+}
